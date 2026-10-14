@@ -1,0 +1,101 @@
+text,category
+"my invoice of $200 is wrong, please check billing",Billing
+refund of $400 not received yet for acme corp,Billing
+charged twice for same order #12345,Billing
+please send gst invoice for order #12345,Billing
+subscription cancelled but still charged $99,Billing
+invoice shows $0 but card charged $200,Billing
+need receipt for payment made on 5th may,Billing
+billing address update not working in profile,Billing
+why i got charged $50 extra? explain billing,Billing
+payment failed but money debited from account,Billing
+invoice #54321 has wrong gst calculation,Billing
+was charged $299 instead of $199 for pro plan,Billing
+please refund $150 for order #98765,Billing
+billing cycle shows incorrect date 10th may,Billing
+unable to update card details for billing,Billing
+my card was charged $499 but plan is $299,Billing
+extra $100 charged for last month,Billing
+need invoice for payment $350 on 1st jan,Billing
+refund status showing pending since 2 weeks,Billing
+gst number not updating in invoice,Billing
+charged for cancelled subscription #11223,Billing
+invoice total mismatch $400 vs $350,Billing
+payment link expired but money deducted,Billing
+need billing history download,Billing
+invoice not generated for order #33445,Billing
+wrong discount applied in invoice $50,Billing
+auto-renewal charged $99 without notice,Billing
+need proforma invoice for $1000,Billing
+billing email not receiving invoices,Billing
+credit note of $200 not applied,Billing
+invoice #99887 shows $0 tax but should be 18%,Billing
+double payment for invoice #44556,Billing
+request refund for accidental purchase $150,Billing
+billing portal not opening,Billing
+"app is crashing on login, fix bug urgently",Bug
+payment webhook for stripe is failing since 10th may,Bug
+dashboard not loading after update,Bug
+export button gives 500 error on click,Bug
+login otp not coming on mobile,Bug
+search filter not working in tickets page,Bug
+mobile app freezes on checkout screen,Bug
+notifications not showing real time,Bug
+file upload fails for csv file,Bug
+"user unable to reset password, bug in email link",Bug
+api returns 403 error for valid token,Bug
+images not loading in gallery view,Bug
+session timeout too quick after login,Bug
+report download stuck at 0 percent,Bug
+webhook retry failing continuously,Bug
+chart not rendering in dashboard,Bug
+email notification not sent on ticket close,Bug
+csv import throws error for 1000 rows,Bug
+date picker not working in chrome,Bug
+pagination broken on tickets list,Bug
+user profile image upload fails,Bug
+slack integration webhook not working,Bug
+cannot delete ticket #123 bug,Bug
+filter by date gives wrong results,Bug
+mobile view menu not opening,Bug
+copy button not working in billing page,Bug
+auto refresh not working in dashboard,Bug
+loading spinner never stops,Bug
+form validation not working for email,Bug
+ticket status not updating after close,Bug
+attachment preview not loading,Bug
+search crashes for special characters,Bug
+login page shows white screen after deploy,Bug
+can you add export to csv feature? would be helpfull,Feature
+need dark mode in dashboard,Feature
+add bulk delete option for tickets,Feature
+please add hindi language support,Feature
+need slack integration for alerts,Feature
+add role based access for team members,Feature
+can we have custom reports feature?,Feature
+add whatsapp notification feature,Feature
+need api access for our crm integration,Feature
+request: add multi-currency support,Feature
+need two factor authentication feature,Feature
+add drag and drop for file upload,Feature
+please add monthly billing summary feature,Feature
+need audit log feature for admin actions,Feature
+add keyboard shortcuts for quick actions,Feature
+need sso login with google,Feature
+add custom fields for tickets,Feature
+please add ticket priority feature,Feature
+need mobile app for ios,Feature
+add time tracking feature for tickets,Feature
+request: add canned responses,Feature
+need customer satisfaction survey feature,Feature
+add internal notes feature for team,Feature
+please add ticket merge feature,Feature
+need auto assignment based on category,Feature
+add email templates customization,Feature
+request for webhook documentation feature,Feature
+need data retention policy setting,Feature
+add advanced search with filters,Feature
+please add export to pdf feature,Feature
+need integration with jira,Feature
+add comment mentions with @ feature,Feature
+request: add ticket sla feature,Feature

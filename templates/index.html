@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TicketMind</title></head>
+<body style="margin:0;font-family:Arial;background:#f6f7fb">
+<div style="background:white;padding:18px 30px;display:flex;justify-content:space-between;border-bottom:1px solid #eee">
+<b style="font-size:20px;color:#6c5ce7">TicketMind</b><span style="font-size:12px;color:green">● Live AI Active</span>
+</div>
+<div style="max-width:900px;margin:30px auto;display:flex;gap:20px;padding:0 15px;flex-wrap:wrap">
+<div style="flex:1;min-width:300px;background:white;padding:24px;border-radius:14px;box-shadow:0 5px 20px rgba(0,0,0,0.07)">
+<h2 style="margin:0 0 6px">AI Ticket Classifier</h2>
+<p style="color:gray;font-size:13px;margin:0 0 15px">Paste ticket, get category + auto reply</p>
+<textarea id="txt" placeholder="e.g. my payment failed..." style="width:100%;height:110px;padding:12px;border-radius:10px;border:1px solid #ddd"></textarea>
+<button id="btn" onclick="predict()" style="width:100%;margin-top:12px;padding:13px;background:#6c5ce7;color:white;border:none;border-radius:10px;font-weight:bold;cursor:pointer">Classify Ticket</button>
+<div id="box" style="display:none;margin-top:16px;padding:14px;background:#f5f3ff;border-radius:10px">
+<b>Category:</b> <span id="cat"></span><br><br>
+<b>Reply:</b> <div id="reply" style="margin-top:6px;background:white;padding:10px;border-radius:8px;font-size:14px"></div>
+</div>
+</div>
+<div style="width:260px;background:white;padding:20px;border-radius:14px;box-shadow:0 5px 20px rgba(0,0,0,0.07);height:fit-content">
+<h4 style="margin:0 0 10px">Project Info</h4>
+<p style="font-size:13px;color:gray;line-height:1.5">Billing / Technical / Account / Feature - auto detect. Saves 80% support time.</p>
+</div>
+</div>
+<script>
+async function predict(){
+ let t=document.getElementById('txt').value;
+ if(!t){alert('ticket taka');return;}
+ document.getElementById('btn').innerText='Loading...';
+ let r=await fetch('/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:t})});
+ let d=await r.json();
+ document.getElementById('box').style.display='block';
+ document.getElementById('cat').innerText=d.category;
+ document.getElementById('reply').innerText=d.reply;
+ document.getElementById('btn').innerText='Classify Ticket';
+}
+</script>
+</body>
+</html>
